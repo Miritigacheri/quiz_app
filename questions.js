@@ -114,11 +114,29 @@ nxtButton.addEventListener("click", nextQuestion);
 let questionIndex = 0;
 let score = 0;
 function nextQuestion() {
-  score = 0;
-  if (questionIndex < 10) {
+  if (questionIndex < 9) {
     showQuestion();
     questionIndex++;
-  } else displayScore();
+  } else displayLstqtn();
+}
+function displayLstqtn() {
+  answerBtn.innerHTML = "";
+  let lastQtn = questions[9];
+  title.innerHTML = lastQtn.title;
+  question.innerHTML = lastQtn.question;
+  lastQtn.answers.forEach((answer) => {
+    const lstBtn = document.createElement("button");
+    lstBtn.innerHTML = answer.text;
+    lstBtn.classList.add("ans-btn");
+    answerBtn.appendChild(lstBtn);
+  });
+  nxtButton.innerHTML = "";
+  const resultBtn = document.createElement("button");
+  resultBtn.innerHTML = "RESULTS";
+  resultBtn.classList.add("next");
+  nxtButton.appendChild(resultBtn);
+
+  resultBtn.addEventListener("click", displayScore);
 }
 showQuestion = () => {
   answerBtn.innerHTML = "";
@@ -131,11 +149,7 @@ showQuestion = () => {
     button.innerHTML = answer.text;
     button.classList.add("btn");
     answerBtn.appendChild(button);
-    if (answer.correct) {
-      button.dataset.correct = answer.correct;
-    }
   });
-  answerBtn.addEventListener("click", checkScore);
 };
 
 function checkScore(e) {
@@ -146,9 +160,9 @@ function checkScore(e) {
   }
 }
 const displayScore = (score) => {
+  window.open("results.html", "_self");
   const finalScore = document.getElementById("score");
   finalScore.innerHTML = "Your score is:" + score;
   checkScore();
-  window.open("results.html", "_self");
 };
 nextQuestion();

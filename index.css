@@ -1,6 +1,9 @@
 * {
   font-family: "Chakra Petch", sans-serif;
 }
+body {
+  background-color: rgb(213, 210, 196);
+}
 .heading {
   height: 500px;
   width: 100%;
@@ -96,60 +99,6 @@
 }
 
 .modal button:hover {
-  color: rgb(38, 38, 147);
-  background-color: #fff;
-}
-.questions {
-  background-color: rgb(189, 180, 137);
-  width: 40%;
-  height: 500px;
-  margin: auto;
-  top: 50%;
-  position: fixed;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-  border-radius: 20px;
-  padding: 20px;
-  visibility: hidden;
-}
-.questionShow {
-  visibility: visible;
-}
-.questions h1 {
-  font-weight: bolder;
-  font-size: 3rem;
-  text-align: center;
-  text-decoration: underline;
-  color: rgb(1, 1, 96);
-}
-.questions p {
-  font-size: 1.5rem;
-  text-align: left;
-}
-.questions button {
-  outline: none;
-  width: 90%;
-  height: 48px;
-  margin: 5px;
-  font-size: 1.5rem;
-  object-fit: contain;
-}
-.next {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.next button {
-  background-color: rgb(38, 38, 147);
-  color: #fff;
-  width: 60%;
-  height: 50px;
-  border-radius: 10px;
-  transition: all 0.1ms ease-in-out;
-  margin-top: 20px;
-}
-.next button:hover {
   color: rgb(38, 38, 147);
   background-color: #fff;
 }
