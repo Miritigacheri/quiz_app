@@ -31,7 +31,7 @@ body {
 .questions button {
   outline: none;
   width: 90%;
-  height: 42px;
+  height: 48px;
   margin: 5px;
   font-size: 1.5rem;
 }
@@ -52,12 +52,6 @@ body {
 .next button:hover {
   color: rgb(38, 38, 147);
   background-color: #fff;
-}
-.correct {
-  background-color: rgba(71, 190, 71, 0.668);
-}
-.incorrect {
-  background-color: rgba(221, 50, 50, 0.71);
 }
 .results {
   background-color: rgb(189, 180, 137);
