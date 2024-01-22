@@ -35,6 +35,15 @@ body {
   margin: 5px;
   font-size: 1.5rem;
 }
+.correct {
+  background: #9aeabc;
+}
+.incorrect {
+  background: #ff9393;
+}
+.questions button:disabled {
+  cursor: no-drop;
+}
 .next {
   display: flex;
   align-items: center;
@@ -65,15 +74,36 @@ body {
   left: 50%;
   border-radius: 20px;
   padding: 20px;
+  visibility: hidden;
 }
 .results h1 {
   font-weight: bolder;
   font-size: 3rem;
   text-align: center;
   color: rgb(1, 1, 96);
+  text-decoration: underline;
 }
 .results h2 {
   font-size: 1.5rem;
   text-align: center;
   color: #fff;
+}
+.strtbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.results button {
+  font-size: 1.25rem;
+  background-color: rgb(38, 38, 147);
+  color: #fff;
+  width: 50%;
+  height: 50px;
+  border-radius: 10px;
+  transition: all 0.1ms ease-in-out;
+  margin: auto;
+}
+.results button:hover {
+  color: rgb(38, 38, 147);
+  background-color: #fff;
 }

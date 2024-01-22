@@ -102,27 +102,3 @@ body {
   color: rgb(38, 38, 147);
   background-color: #fff;
 }
-.results {
-  background-color: rgb(189, 180, 137);
-  width: 40%;
-  height: 500px;
-  margin: auto;
-  top: 50%;
-  position: fixed;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-  border-radius: 20px;
-  padding: 20px;
-}
-.results h1 {
-  font-weight: bolder;
-  font-size: 3rem;
-  text-align: center;
-  color: rgb(1, 1, 96);
-}
-.results h2 {
-  font-size: 1.5rem;
-  text-align: center;
-  color: #fff;
-}
