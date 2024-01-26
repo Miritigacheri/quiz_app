@@ -1,30 +1,28 @@
 * {
-  font-family: "Chakra Petch", sans-serif;
+  font-family: "Playfair Display", serif;
 }
 body {
-  background-color: rgb(213, 210, 196);
+  background-color: rgb(34, 32, 32);
+  color: #fff;
 }
 .heading {
   height: 500px;
-  width: 100%;
-  background-color: rgb(213, 210, 196);
-  display: grid;
-  grid-template-columns: auto auto;
+  width: 60%;
+  background-color: rgb(207, 56, 114);
+  margin: auto;
   margin-top: 50px;
-  margin-left: 0;
-  margin-right: 0;
+  padding: 20px;
   border: 0;
+  border-radius: 10px;
   visibility: visible;
-}
-.headingHide {
-  visibility: hidden;
-}
-.rightSide {
   text-align: center;
   font-size: xx-large;
   color: #fff;
 }
-.rightSide button {
+.headingHide {
+  visibility: hidden;
+}
+.heading button {
   width: 300px;
   height: 50px;
   font-size: large;
@@ -32,9 +30,9 @@ body {
   border-radius: 20px;
   transition: 0.5ms ease-in-out;
 }
-.rightSide button:hover {
+.heading button:hover {
   color: grey;
-  background-color: #f0db4f;
+  background-color: #451726;
   cursor: pointer;
 }
 .heading img {
@@ -43,18 +41,9 @@ body {
   width: 100%;
   object-fit: cover;
 }
-.heading ol {
-  width: 50%;
-  margin: 10px auto;
-  background-color: rgb(213, 210, 196);
-}
-.num1 {
-  padding: 10px;
-}
-.num1 p {
-  width: 40%;
-  border: 1px solid black;
-  padding: 10px;
+.heading h1 {
+  color: rgb(84, 38, 25);
+  text-decoration: underline;
 }
 .modal {
   width: 40%;
@@ -67,7 +56,7 @@ body {
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
-  background-color: rgb(189, 180, 137);
+  background-color: rgb(207, 56, 114);
   visibility: hidden;
 }
 .modalOpen {
@@ -78,7 +67,7 @@ body {
 }
 .modal h1 {
   text-align: center;
-  color: rgb(1, 1, 96);
+  color: rgb(84, 38, 25);
 }
 .mdl-btn {
   display: flex;
@@ -92,7 +81,7 @@ body {
   width: 20%;
   height: 40px;
   border-radius: 20px;
-  background-color: rgb(38, 38, 147);
+  background-color: #451726;
   color: #fff;
   cursor: pointer;
   font-size: large;
