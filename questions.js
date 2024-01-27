@@ -155,6 +155,8 @@ function chooseAns(e) {
 }
 
 function displayScore() {
+  const time = document.querySelector(".timer");
+  time.innerHTML = "";
   document.getElementById("results").style.visibility = "visible";
   const finalScore = document.getElementById("final");
   finalScore.innerHTML = `Your Score is: ${score}`;
@@ -165,3 +167,26 @@ function displayQtn() {
 let reset = document.getElementById("restart");
 reset.addEventListener("click", displayQtn);
 nextQuestion();
+const twentyMinuteCountdown = 20 * 60 * 1000;
+
+let timerValue = twentyMinuteCountdown;
+const countDown = document.getElementById("");
+function startCountdown() {
+  setTimeout(updateDisplay, 1000);
+}
+
+function updateDisplay() {
+  if (timerValue > 0) {
+    timerValue -= 1000;
+    const minutesRemaining = Math.floor(timerValue / 60000);
+    const secondsRemaining = Math.floor((timerValue % 60000) / 1000);
+
+    const formattedTime = `${minutesRemaining} : ${secondsRemaining}`;
+
+    document.getElementById("timer").innerHTML = formattedTime;
+    startCountdown();
+  } else {
+    displayScore();
+  }
+}
+startCountdown();
