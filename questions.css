@@ -12,6 +12,7 @@ body {
   margin-top: 10px;
 }
 .questions {
+  padding: 5px;
   background-color: rgba(18, 86, 22, 0.807);
   width: 40%;
   height: 500px;
@@ -40,8 +41,8 @@ body {
   outline: none;
   width: 90%;
   height: 48px;
-  margin: 5px;
-  font-size: 1.5rem;
+  margin: 4px;
+  font-size: 1.1rem;
 }
 .correct {
   background: #9aeabc;
